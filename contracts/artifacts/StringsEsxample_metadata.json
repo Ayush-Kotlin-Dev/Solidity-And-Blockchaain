@@ -13,6 +13,25 @@
 						"type": "string"
 					}
 				],
+				"name": "addTwoStrings",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_myString",
+						"type": "string"
+					}
+				],
 				"name": "compareTwoString",
 				"outputs": [
 					{
@@ -92,11 +111,11 @@
 	},
 	"sources": {
 		"contracts/StringsExample.sol": {
-			"keccak256": "0xb5527f8624a326700493d6a7953ba3d28e7cd61069229071fde413cf56d98e1a",
+			"keccak256": "0x4d79237b8f99ab83d317781c71d8c4fde757826dc53ad5e6e2c13f417eaeabe5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0640c08c7d0dd039424b3ba9be6be85e5d6006042441d947054e72bd65b430f8",
-				"dweb:/ipfs/QmUD7nuRzKAg4XMmHe1ueXnFwNSWnBi1EfqzPyiYxCMpip"
+				"bzz-raw://ebeb0d73dbe24becc685fa1616f7ac0c54dfd9f9aa7761d0c810a8f8390a2145",
+				"dweb:/ipfs/QmZMcTsf2EVhc24fYXfv5GqxRMmBCXEpz8x1Toj8sQ7Vg5"
 			]
 		}
 	},

@@ -18,6 +18,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getInitialValue",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getOwner",
 				"outputs": [
 					{
@@ -84,11 +97,11 @@
 	},
 	"sources": {
 		"contracts/ExampleConstructor.sol": {
-			"keccak256": "0xfb907c88208ddf570c2b083ee71f433bfb9180a78a7f8f3ad1926b3a3e66244d",
+			"keccak256": "0x03c65335b36e3cd872a6cb4753d2f411716817d3cf754dd5d28c7e4f01ecc243",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://14104e074f4703e6899123ea1d3265151314d227b4e258819e2dd5176d5ac76b",
-				"dweb:/ipfs/QmcpavAQjnVLLtWJF5FHsdLMmHbet9fVwqYUZ5CbrbPyLP"
+				"bzz-raw://a5cd93f9de135b02eec5110ce1b3a4d3fd2b02ebeb5b8fb0596cdfcc6b8fdc5e",
+				"dweb:/ipfs/Qma6XUqApr5nJvhd1sboUPg1KDTGYseqZyZEgJoVx1DKvM"
 			]
 		}
 	},

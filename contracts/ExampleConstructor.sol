@@ -15,4 +15,12 @@ contract ConstructorExample {
     function getOwner() public view returns (address) {
         return owner;
     }
+    // Example function to get the initial value
+    function getInitialValue() public view returns (uint256) {
+        return initialValue;
+    }
+    
+
+
+    
 }
