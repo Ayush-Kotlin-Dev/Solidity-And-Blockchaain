@@ -7,12 +7,63 @@
 		"abi": [
 			{
 				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "myString",
 				"outputs": [
 					{
 						"internalType": "string",
 						"name": "",
 						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "receiveEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalReceived",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -28,7 +79,14 @@
 				],
 				"name": "updateString",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -60,11 +118,11 @@
 	},
 	"sources": {
 		"contracts/SampleContract.sol": {
-			"keccak256": "0xb8b36195a5d705e732525959f4deefd6cea2b1f7531198222bf13db0e5501c59",
+			"keccak256": "0x42b1e694c248a003ddbbf40601849375a2527a03b9df94a0058657004f44c6f4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://155f297f7423b15bad1122075cc22691e5b6edb7eefaeebd261156c9a7475517",
-				"dweb:/ipfs/QmevfPhdae9FBTwWvvN9DGffubNKNX6FqPQvUyVwC3YfeD"
+				"bzz-raw://a1f5eaa72f8529d13dbdbb5db50701f79ee812e3e9944ecfb13d51f02ff7fc62",
+				"dweb:/ipfs/Qmem76vjo9CtC7iSwiG3TRQM7KXVW7y7VbX4gDvQArNxqQ"
 			]
 		}
 	},
