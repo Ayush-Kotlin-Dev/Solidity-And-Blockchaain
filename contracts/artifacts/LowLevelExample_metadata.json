@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_otherContract",
+						"type": "address"
+					}
+				],
+				"name": "delegateToOtherContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_otherContract",
+						"type": "address"
+					}
+				],
+				"name": "readDataFromOtherContract",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "sendEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Lowlevel.sol": "LowLevelExample"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Lowlevel.sol": {
+			"keccak256": "0xa51a102a169de33b74696749c1f7573613efab3910ea252f5f5b754d4562fc22",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3e641fa7270e852b16f0c6f153fddfd9bc0af964170b7265bc445c83525ce8dd",
+				"dweb:/ipfs/QmdRrKNg2KRqrG2FovffZBEp1NSNgNx5V6D6bzhtcsDUWV"
+			]
+		}
+	},
+	"version": 1
+}
