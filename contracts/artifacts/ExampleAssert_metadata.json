@@ -6,40 +6,45 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "balance",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balanceRecieved",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "uint8",
 						"name": "",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "deposit",
+				"inputs": [],
+				"name": "recieveMoney",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
 						"name": "_amount",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
-				"name": "withdraw",
+				"name": "withdrawlMoney",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -73,11 +78,11 @@
 	},
 	"sources": {
 		"contracts/ExampleAssert.sol": {
-			"keccak256": "0x13839a7f14603823cba4989ed0af5aa4b1a4570f383d610ac678d21814df7b85",
+			"keccak256": "0xdc99a9bf23bd47769d0ad81b0f789b740cde104105e54c9cdab0b3d485d39d6e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4521b67377ebe3cae897d18e9cd967c8e472d749f83e137d629bcf21c1739848",
-				"dweb:/ipfs/QmbuZSV8vnvQmjoHmHdp3M6MDoNe6EKTKdVFnYGC5cygqD"
+				"bzz-raw://2bcc374238810de2482f61557a1f069eede636373b649618c9ddd6403f6ed70e",
+				"dweb:/ipfs/QmNsHoaDjyJZb1M4NS7mRe1ybWTApGVZuw9Jk8XtZJBuAN"
 			]
 		}
 	},
