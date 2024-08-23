@@ -1,72 +1,75 @@
 {
 	"compiler": {
-		"version": "0.8.15+commit.e14f2714"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string[]",
-						"name": "proposalNames",
-						"type": "string[]"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "chairperson",
-				"outputs": [
+				"anonymous": false,
+				"inputs": [
 					{
+						"indexed": true,
 						"internalType": "address",
-						"name": "",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
 						"type": "address"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
+				"name": "OwnershipTransferred",
+				"type": "event"
 			},
 			{
+				"anonymous": false,
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "proposals",
-				"outputs": [
-					{
-						"internalType": "uint8",
-						"name": "id",
-						"type": "uint8"
-					},
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "voteCount",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
+						"indexed": true,
 						"internalType": "address",
 						"name": "voter",
 						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "candidateId",
+						"type": "uint256"
 					}
 				],
-				"name": "registerVoter",
+				"name": "VoteCasted",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -74,9 +77,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint8",
-						"name": "proposalId",
-						"type": "uint8"
+						"internalType": "uint256",
+						"name": "candidateId",
+						"type": "uint256"
 					}
 				],
 				"name": "vote",
@@ -87,53 +90,17 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
+						"internalType": "uint256",
 						"name": "",
-						"type": "address"
+						"type": "uint256"
 					}
 				],
-				"name": "voters",
+				"name": "votes",
 				"outputs": [
 					{
-						"internalType": "bool",
-						"name": "voted",
-						"type": "bool"
-					},
-					{
-						"internalType": "uint8",
-						"name": "vote",
-						"type": "uint8"
-					},
-					{
-						"internalType": "bool",
-						"name": "isRegistered",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "winnerName",
-				"outputs": [
-					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "winningProposal",
-				"outputs": [
-					{
-						"internalType": "uint8",
-						"name": "winningProposalId",
-						"type": "uint8"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -153,9 +120,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Voting.sol": "Voting"
+			"contracts/ExampleEvents.sol": "Voting"
 		},
-		"evmVersion": "london",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -167,12 +134,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Voting.sol": {
-			"keccak256": "0x2ff244dd12851a6206bc8ea30a7074e7005f2629f002f6c4475283a191d78b0f",
+		"contracts/ExampleEvents.sol": {
+			"keccak256": "0xa1933420d52e691fcb08e3976c7f615dadc4919d515dbdbbc6bff5ee1786857a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7413ebdcf239f8ede2d2e78edc78b5c770ea407c1b9f500edbac3ca9444f6d43",
-				"dweb:/ipfs/QmcoQrmgTDY4xERdhd1QbQFKLhdixUmtmda91f9xvADjrT"
+				"bzz-raw://de48d130d2ede9fe33a46c798cc1f30f03bab90d69b507a24c3247e9a191d68d",
+				"dweb:/ipfs/QmWgpf3rKPfmwKz4ZPYcBwAUu6BwduzaE26m31gKvbQuYN"
 			]
 		}
 	},
