@@ -22,6 +22,7 @@ contract Voting {
         emit OwnershipTransferred(owner, newOwner);
         owner = newOwner;
     }
+
     
 
     function vote(uint256 candidateId) public {
