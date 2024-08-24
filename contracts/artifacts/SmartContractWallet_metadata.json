@@ -30,6 +30,64 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "confirmationsFromguardiansForReset",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "guardians",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "proposeNewOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -43,6 +101,24 @@
 					}
 				],
 				"name": "setAllowance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_guardian",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "_isGuardian",
+						"type": "bool"
+					}
+				],
+				"name": "setGuardian",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -109,11 +185,11 @@
 	},
 	"sources": {
 		"contracts/SmartContractWallet.sol": {
-			"keccak256": "0xf788e1b8f3b479bc4fd98e1b5eb14b65982cc76739321d8a29c7eac440bcb343",
+			"keccak256": "0xfdafc2ff248d6752487c74ff109e6020779dfb357eb476f271bdb78b23227685",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5acd30c1aadb18149a7889996ebf736a806a019287b96b9dc4973328d69155e2",
-				"dweb:/ipfs/QmVa1eJkdXqZy9dE1AvHA3sybg2SmPhH8hRfaTmcEYRJLt"
+				"bzz-raw://6313f985fa26c45fa1c6305a1445d8ee9176fb7d6f4901e5e797cb7b87784fc0",
+				"dweb:/ipfs/QmXJkFyCBs2m4jkaTG1ARcQtYKFkokDzUA5QXpeWqYJ6ML"
 			]
 		}
 	},
