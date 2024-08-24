@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "willFail",
+				"name": "aFunction",
 				"outputs": [],
 				"stateMutability": "pure",
 				"type": "function"
@@ -26,7 +26,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ExampleTryCatch.sol": "AnotherContract"
+			"contracts/ExampleTryCatch.sol": "Willthrow"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -41,11 +41,11 @@
 	},
 	"sources": {
 		"contracts/ExampleTryCatch.sol": {
-			"keccak256": "0x610393bc4bf42bfe1e4fb8bfe684dc9878ed2dbadb75330ebdfff343e0147963",
+			"keccak256": "0x546223863c9e4be4e3a3461319e75af13d9a92c7f92065bc46b2cf2462c2f838",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://45f3b6bd15469d92abfe7920ff0c029f249683083e1ff20578a4f066951126c2",
-				"dweb:/ipfs/QmRFNfbqpSoGmVheEiHVo77W3mXf9njPaLrExnVRsGh2wn"
+				"bzz-raw://c06c5aee0954a97c26b1382996bfb44936f6eaf278e6378912b041cd1ac9f131",
+				"dweb:/ipfs/QmZzN5VmK5e3SCjLqoTFgfwBe3H4v1zJ9QhbS1XuYUBp3o"
 			]
 		}
 	},
