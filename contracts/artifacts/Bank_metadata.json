@@ -6,17 +6,12 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"anonymous": false,
 				"inputs": [
 					{
 						"indexed": true,
 						"internalType": "address",
-						"name": "sender",
+						"name": "account",
 						"type": "address"
 					},
 					{
@@ -26,39 +21,27 @@
 						"type": "uint256"
 					}
 				],
-				"name": "LogEvent",
+				"name": "Deposit",
 				"type": "event"
 			},
 			{
-				"inputs": [],
-				"name": "sendEther",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
+				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": true,
 						"internalType": "address",
-						"name": "_to",
+						"name": "account",
 						"type": "address"
 					},
 					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "_amount",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"name": "sendtoken",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
+				"name": "Withdraw",
+				"type": "event"
 			},
 			{
 				"inputs": [
@@ -68,7 +51,7 @@
 						"type": "address"
 					}
 				],
-				"name": "tokenBalance",
+				"name": "balances",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -77,6 +60,26 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -93,7 +96,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SampleEvent.sol": "EventExample"
+			"contracts/SampleEvent.sol": "Bank"
 		},
 		"evmVersion": "london",
 		"libraries": {},
