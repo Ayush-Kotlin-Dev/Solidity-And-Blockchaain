@@ -49,6 +49,12 @@
 						"internalType": "uint256",
 						"name": "_amount",
 						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
 					}
 				],
 				"name": "TokensSent",
@@ -133,11 +139,11 @@
 	},
 	"sources": {
 		"contracts/SampleEvent.sol": {
-			"keccak256": "0x63fff61e2761e1e1456f64b0fd2587186e06400e17a49da029d8d3d50ef8f202",
+			"keccak256": "0xea602830d6e84d323a220f9f1e2a8d8a050824f3d4c2747b1721823001cf5be4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4571f6c74b31007baad3d84624b52f6f18659621560ec2c497b2a8b2e9f12b82",
-				"dweb:/ipfs/QmbEmJssG7q1SMsqtyt2nFHNG4DZrUNp84EknwRdVzaC8S"
+				"bzz-raw://838703cad2ca190e0bba925831e9aed346e7d1e703faaf83d251e60fd80d1421",
+				"dweb:/ipfs/QmNzse1qDDq2HmwSUWZgyNmjxXJ5zeUAcUB15uoS1JCcF2"
 			]
 		}
 	},
