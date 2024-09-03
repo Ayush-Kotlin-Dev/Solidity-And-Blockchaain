@@ -30,6 +30,31 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensSent",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "sendEther",
 				"outputs": [],
@@ -108,11 +133,11 @@
 	},
 	"sources": {
 		"contracts/SampleEvent.sol": {
-			"keccak256": "0x7eeb7b62e343b236f650d611ac7fd3f7bf698a6bced6a12f57be1b10a5a75584",
+			"keccak256": "0x63fff61e2761e1e1456f64b0fd2587186e06400e17a49da029d8d3d50ef8f202",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1cba20d5801d4bcdb94541a6a5c4c81edff23f338dbc3a56dba0b8ccbc2b5137",
-				"dweb:/ipfs/QmSxQWSRtba5426sXGBMMakA2dvqY2T2TudmGHKq5LwfkB"
+				"bzz-raw://4571f6c74b31007baad3d84624b52f6f18659621560ec2c497b2a8b2e9f12b82",
+				"dweb:/ipfs/QmbEmJssG7q1SMsqtyt2nFHNG4DZrUNp84EknwRdVzaC8S"
 			]
 		}
 	},

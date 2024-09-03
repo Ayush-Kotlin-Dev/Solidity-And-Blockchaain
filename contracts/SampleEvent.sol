@@ -9,6 +9,8 @@ contract EventExample {
     constructor(){
         tokenBalance[msg.sender] = 100 ;
     }
+    
+    event TokensSent(address _from , address _to ,uint _amount);
 
 
     function sendtoken(address _to ,uint _amount )public returns(bool){
@@ -16,6 +18,9 @@ contract EventExample {
         require(tokenBalance[msg.sender] >= _amount , "Not enough tokens");
         tokenBalance[msg.sender] -= _amount;
         tokenBalance[_to] += _amount ;
+
+        emit TokensSent(msg.sender, _to, _amount);
+        
 
         return true ;
     }
