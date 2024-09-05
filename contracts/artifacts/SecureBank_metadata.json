@@ -8,51 +8,27 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_newName",
-						"type": "string"
-					}
-				],
-				"name": "changeName",
+				"inputs": [],
+				"name": "deposit",
 				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "contractName",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "isOwner",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -66,6 +42,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerWithdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -82,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Inheritance.sol": "MyContract"
+			"contracts/Inheritance_Modifiers.sol": "SecureBank"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -96,12 +85,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Inheritance.sol": {
-			"keccak256": "0xb9d088a5679dc483306c48f13825ccbde9ca205d884820c7f1ebcd1443167029",
+		"contracts/Inheritance_Modifiers.sol": {
+			"keccak256": "0xf443c30623116c82b32b2a82f7112c87ff215d6b3f06c614ada65aeeb896a93c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://31af28072c6764436ec4d16f0662866c30521d744cac2de0d82e812999de226c",
-				"dweb:/ipfs/QmTwyxcbXJePJvHp3WxsrPFryC8CXCXBfuvxKhG5rbQdjP"
+				"bzz-raw://df2b31689879575da6c7faa3510cfb5d0b695eecae207059b59e8752121352d1",
+				"dweb:/ipfs/QmSeTsEbHpybFw99cPpvUVZS5wtUdyXtgAxiYrZuuiAdyL"
 			]
 		}
 	},
